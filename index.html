@@ -22,34 +22,66 @@
 </head>
 <body class="lato">
     <header>
-        <nav class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
-            <div class="navbar bg-base-100 bg-[#F85559] rounded-full">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost btn-circle">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
-                    </ul>
-                  </div>
+      <nav class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 bg-[#F85559] rounded-full">
+        <div class="navbar">
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-white text-xs font-medium">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class=" navbar-start justify-between flex-1 relative">
+            <a href="" class="text-3xl sm:text-3xl flex gap-2">
+                <img class="w-10" src="./images/logo.png" alt="" />
+                <span class="text-[#121212] md:text-white font-semibold">Fruit Burst</span>
+              </a>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden text-[#121212] sm:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M4 6h16M4 12h8m-8 6h20"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="absolute menu menu-sm dropdown-content"
+              >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              <li>
+                <div class="flex flex-1">
+                  <form class="relative">
+                    <input class="input w-full" type="text" placeholder="Search here" />
+                   <img src="./images/Frame (1).svg" alt="">
+                  </form>
                 </div>
-                <div class="navbar-center gap-2 p-2">
-                  <img src="./images/logo.png" alt="">
-                  <p class="text-white md:text-4xl text-2xl">Fruit Burst</p>
-                </div>
-                <div class="navbar-end">
-                 <div class="flex relative p-5">
-                    <div><input type="text" placeholder="Search here" class="rounded-full"></div>
-                    <div class="absolute left-44"><img src="./images/Frame (1).svg" alt=""></div>
-                 </div>
-                 
-                </div>
-              </div>
-        </nav>
+              </li>
+            </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-end hidden lg:flex flex-1">
+            <form class="relative">
+              <input class="input" type="text" placeholder="Search here" />
+              <img class="absolute right-4 bottom-3" src="./images/Frame (1).svg" alt="">
+            </form>
+          </div>
+        </div>
+      </nav>
            <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
             <div class="carousel md:w-full w-80">
                 <div id="slide1" class="carousel-item relative w-full">
